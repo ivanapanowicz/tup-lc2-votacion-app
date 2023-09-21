@@ -8,6 +8,7 @@
   <link rel="shortcut icon" type="image/png" href="img/icons/favicon-16x16.png" />
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/variables.css" />
 </head>
 
 <body>
@@ -18,11 +19,12 @@
       Electoral
     </div>
     <!--Barra de menú principal-->
-    <ul>
-      <li><a class="active" href="#informes">Informes</a></li>
-      <li><a href="#contact">Contacto</a></li>
-      <br>
-      <button>INICIO</button>
+    <a href="paso.html" id="boton-paso"><button>PASO</button></a>
+    <a href="generales.html" id="boton-generales"><button>Generales</button></a>
+    <a class="active" href="informes.html"><button>Informes</button></a>
+    <li><a href="#contact">Contacto</a></li>
+    <br>
+    <a href="index.html"><button>INICIO</button></a>
     </ul>
   </header>
   <!-- Contenido principal de la página -->
@@ -45,16 +47,13 @@
       <h3>Elecciones 2021</h3>
       <p>Resultados Provisorios</p>
       <div class="election-buttons">
-        <a href="paso.html">
-          <button>
-            PASO
+        <a href="paso.html"><button>PASO
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
               y="0px" width="70px" height="70px" viewBox="0 0 841.889 595.281"
               enable-background="new 0 0 841.889 595.281" xml:space="preserve"></svg>
           </button>
         </a>
-        <a href="generales.html">
-          <button>Generales
+        <a href="generales.html"><button>Generales
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
               y="0px" width="70px" height="70px" viewBox="0 0 841.889 595.281"
               enable-background="new 0 0 841.889 595.281" xml:space="preserve"></svg>
@@ -81,6 +80,5 @@
       </p>
   </footer>
 </body>
-6
 
 </html>
