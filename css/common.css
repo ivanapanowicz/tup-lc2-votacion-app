@@ -3,28 +3,24 @@ html,
 * {
   font-family: "Roboto", sans-serif;
 }
+
 body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
   padding: 0;
   background-color: rgb(240, 240, 240);
 }
 
 p {
-  font-family: "Roboto", sans-serif;
   font-size: 12px;
   color: var(--textos);
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
   font-size: 26px;
   color: var(--titulos);
   padding-bottom: 20px;
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
   font-size: 22px;
   color: var(--titulos);
 }
@@ -66,12 +62,7 @@ footer img {
 
 /* arreglar */
 
-.boton-elecciones {
-  list-style: none;
-  display: flex;
-}
-
-.boton-paso a {
+.boton-paso {
   background-color: var(--magenta);
   border-radius: 5px;
   padding: 5px;
@@ -83,11 +74,11 @@ footer img {
   text-decoration: none;
 }
 
-.boton-paso a:hover {
+.boton-paso:hover {
   background-color: var(--gris-claro);
 }
 
-.boton-generales a {
+.boton-generales {
   background-color: var(--celeste);
   border-radius: 5px;
   padding: 5px;
@@ -99,12 +90,12 @@ footer img {
   text-decoration: none;
 }
 
-.boton-generales a:hover {
+.boton-generales:hover {
   background-color: var(--gris-claro);
 }
 /*  */
 
-.informes a {
+.informes-activate {
   border-radius: 15px;
   border: 1px solid white;
   padding: 5px;
@@ -116,6 +107,6 @@ footer img {
   display: inline-block;
 }
 
-.informes a:hover {
+.informes:hover {
   background-color: var(--gris-claro);
 }
