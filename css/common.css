@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
 html,
+* {
+  font-family: "Roboto", sans-serif;
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -30,17 +33,20 @@ h2 {
   padding: 0.5em;
   background-color: var(--fondo-Cabecera);
   color: white;
-  width: 90%;
+  width: 100%;
   margin-top: 0;
   margin-right: auto;
   margin-bottom: auto;
   margin-left: auto;
 }
 
+.header-page .logo {
+  margin-left: 5%;
+}
+
 ul {
   margin-left: 13px;
   margin-right: 13px;
-  padding-top: 20px;
   background-color: var(--fondo-Menu);
   width: 100%;
 }
@@ -58,7 +64,14 @@ footer img {
   width: 40px;
 }
 
-#boton-paso {
+/* arreglar */
+
+.boton-elecciones {
+  list-style: none;
+  display: flex;
+}
+
+.boton-paso a {
   background-color: var(--magenta);
   border-radius: 5px;
   padding: 5px;
@@ -66,17 +79,34 @@ footer img {
   font-size: 10px;
   text-transform: uppercase;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
+  text-decoration: none;
 }
 
-#boton-paso:hover {
+.boton-paso a:hover {
   background-color: var(--gris-claro);
 }
 
-#boton-generales {
+.boton-generales a {
   background-color: var(--celeste);
   border-radius: 5px;
+  padding: 5px;
+  color: #fff;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.boton-generales a:hover {
+  background-color: var(--gris-claro);
+}
+/*  */
+
+.informes a {
+  border-radius: 15px;
+  border: 1px solid white;
   padding: 5px;
   color: #fff;
   font-size: 10px;
@@ -86,6 +116,6 @@ footer img {
   display: inline-block;
 }
 
-#boton-generales:hover {
+.informes a:hover {
   background-color: var(--gris-claro);
 }
