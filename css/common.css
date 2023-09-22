@@ -73,12 +73,10 @@ h3 {
 footer {
   background-color: var(--fondo-Footer);
   color: var(--texto-footer);
-  height: 90px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1.5rem;
-  padding: 0;
+  padding: 70px;
   margin: 0;
 }
 
