@@ -36,6 +36,22 @@
   background-color: var(--gris-claro);
 }
 
+
+/* Boton Filtrar busqueda */
+.boton-filtrar {
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--textos);
+  display: inline-flex;
+  align-items: center;
+}
+
+
 select {
   background: transparent;
   border: none;
@@ -113,13 +129,13 @@ p.texto-path {
 }
 
 .escrutado {
+  color: white;
   background-color: var(--morado);
   border-radius: 10px;
   margin: 15px;
   height: 70px;
   width: 184px;
   padding: 0.5rem 1rem;
-  color: #fff;
   font-size: 12px;
   text-align: center;
   display: flex;
@@ -128,6 +144,7 @@ p.texto-path {
   align-items: center;
 }
 .exito{
+    color: #FFffFF;
     background-color: var(--mensaje-usuario-verde);
     border-style: solid;
     border-radius: 10px;
@@ -138,8 +155,10 @@ p.texto-path {
     font-size: 16px;
     font-weight: 200px;
     text-align: center;
+    width: 400px;
  }
  .error{
+  color: #FFffFF;
      background-color: var(--mensaje-usuario-rojo);
      border-style: solid;
     border-radius: 10px;
@@ -150,8 +169,10 @@ p.texto-path {
     font-size: 16px;
     font-weight: 200px;
     text-align: center;
+    width: 400px;
  }
  .completar{
+  color: #FFffFF;
      background-color: var(--mensaje-usuario-amarillo);
      border-style: solid;
     border-radius: 10px;
@@ -162,6 +183,7 @@ p.texto-path {
     font-size: 16px;
     font-weight: 200px;
     text-align: center;
+    width: 400px;
  }
 
  .chart-wrap {
