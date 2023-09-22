@@ -6,8 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sistema de Publicación de Resultados Electorales</title>
   <link rel="shortcut icon" type="image/png" href="img/icons/favicon-16x16.png" />
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/f
+  ont-awesome.min.css">
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/pages/paso.css"/>
+  <link rel="stylesheet" href="css/variables.css"/>
 </head>
 
 <body>
@@ -18,11 +23,6 @@
       Electoral
     </div>
     <!--Barra de menú principal-->
-    <ul>
-      <li><a class="active" href="#informes">Informes</a></li>
-      <li><a href="#contact">Contacto</a></li>
-    </ul>
-
     <!-- Filtro de año -->
     <nav class="menu">
       <div>
@@ -39,16 +39,26 @@
           <select id="filtro-distrito">
             <option for="filtro-distrito">Distrito</option>
           </select>
+          <select class="filtrar" id="filtrar">
+            <option for="filtrar">Filtrar</option>
+          </select>
+          
         </form>
       </div>
     </nav>
   </header>
   <!-- Contenido principal de la página -->
   <main>
+    <h3 class="exito">Se agrego con exito el resultado al informe.</h3>
+    <br>
+    <h3 class="error"> Se produjo un error al intentar agregar resultados al informe.</h3>
+    <br>
+    <h3 class="completar">La operacion no se pudo completar.</h3>
     <section id="sec-titulo">
       <!--Seccion para agregar una palicula favorita por codigo-->
-      <h2>Titulo de Sección</h2>
-      <p>Párrafo o subtítulo</p>
+      <h1>Elecciones 2021 | Paso</h1>
+      <p class="texto-path">2020 > Generales > Provisorio > Senadores Nacionales > Buenos
+        Aires</p>
       <div>Imagen</div>
     </section>
     <section id="sec-contenido">

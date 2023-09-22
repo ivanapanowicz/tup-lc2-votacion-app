@@ -1,0 +1,70 @@
+.menu .filtrar{
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    font-size: 10px;
+    font-style: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--textos );
+
+}
+select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    color: var(--celeste);
+    font-weight: bold;
+  }
+.exito{
+   background-color: var(--mensaje-usuario-verde);
+   border-style: solid;
+   border-radius: 10px;
+   margin: 20px auto;
+   border-width: 2px;
+   padding: 15px;
+   font-style: #FFffFF;
+   font-size: 16px;
+   font-weight: 200px;
+   text-align: center;
+}
+.error{
+    background-color: var(--mensaje-usuario-rojo);
+    border-style: solid;
+   border-radius: 10px;
+   margin: 20px auto;
+   border-width: 2px;
+   padding: 15px;
+   font-style: #FFffFF;
+   font-size: 16px;
+   font-weight: 200px;
+   text-align: center;
+}
+.completar{
+    background-color: var(--mensaje-usuario-amarillo);
+    border-style: solid;
+   border-radius: 10px;
+   margin: 20px auto;
+   border-width: 2px;
+   padding: 15px;
+   font-style: #FFffFF;
+   font-size: 16px;
+   font-weight: 200px;
+   text-align: center;
+}
+.texto-path{
+    font-size: 14px;
+    color: var( --celeste);
+
+}
+.botonInforme{
+    background-color: rgba(185, 184, 184, 0.596);
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
