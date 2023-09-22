@@ -105,3 +105,39 @@ p.texto-path {
   justify-content: center;
   align-items: center;
 }
+.exito{
+    background-color: var(--mensaje-usuario-verde);
+    border-style: solid;
+    border-radius: 10px;
+    margin: 20px auto;
+    border-width: 2px;
+    padding: 15px;
+    font-style: #FFffFF;
+    font-size: 16px;
+    font-weight: 200px;
+    text-align: center;
+ }
+ .error{
+     background-color: var(--mensaje-usuario-rojo);
+     border-style: solid;
+    border-radius: 10px;
+    margin: 20px auto;
+    border-width: 2px;
+    padding: 15px;
+    font-style: #FFffFF;
+    font-size: 16px;
+    font-weight: 200px;
+    text-align: center;
+ }
+ .completar{
+     background-color: var(--mensaje-usuario-amarillo);
+     border-style: solid;
+    border-radius: 10px;
+    margin: 20px auto;
+    border-width: 2px;
+    padding: 15px;
+    font-style: #FFffFF;
+    font-size: 16px;
+    font-weight: 200px;
+    text-align: center;
+ }

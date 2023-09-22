@@ -8,6 +8,20 @@
     color: var(--textos );
 
 }
+.boton-inicio {
+    background-color: var(--gris-claro);
+    border-radius: 5px;
+    padding: 5px;
+    font: 10px Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .boton-inicio:hover {
+    background-color: var(--gris-claro);
+  }
 select {
     background: transparent;
     border: none;
@@ -67,4 +81,5 @@ select {
     border-radius: 5px;
     text-transform: uppercase;
 }
+
 
