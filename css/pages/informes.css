@@ -1,0 +1,77 @@
+.exito {
+  background-color: var(--mensaje-usuario-verde);
+  border-style: solid;
+  border-radius: 10px;
+  margin: 20px auto;
+  border-width: 2px;
+  padding: 15px;
+  font-style: #FFffFF;
+  font-size: 16px;
+  font-weight: 200px;
+  text-align: center;
+}
+
+.error {
+  background-color: var(--mensaje-usuario-rojo);
+  border-style: solid;
+  border-radius: 10px;
+  margin: 20px auto;
+  border-width: 2px;
+  padding: 15px;
+  font-style: #FFffFF;
+  font-size: 16px;
+  font-weight: 200px;
+  text-align: center;
+}
+
+.completar {
+  background-color: var(--mensaje-usuario-amarillo);
+  border-style: solid;
+  border-radius: 10px;
+  margin: 20px auto;
+  border-width: 2px;
+  padding: 15px;
+  font-style: #FFffFF;
+  font-size: 16px;
+  font-weight: 200px;
+  text-align: center;
+}
+
+
+/* Estilos para la grilla */
+table {
+  width: 1024px;
+  margin: 0 auto 50px auto;
+  border-radius: 15px;
+  border: 1px solid --borde-Grilla;
+  border-collapse: collapse;
+  background-color: rgb(250, 250, 250);
+}
+
+/* Estilos para la cabecera */
+thead {
+  text-align: center;
+  color: --titulo-Grilla;
+}
+
+thead th {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid --borde-inferior-Grilla;
+}
+
+/* Estilos para el cuerpo */
+tbody tr:hover {
+  background-color: rgb(250, 250, 250);
+}
+
+tbody td {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid --borde-inferior-Grilla;
+  padding: 15px 0px;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: top;
+}
