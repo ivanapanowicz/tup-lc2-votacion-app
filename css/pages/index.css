@@ -1,9 +1,3 @@
-.sec-titulo .img {
-  font-size: 18px;
-  padding: 45px;
-  
-}
-
 .boton-paso {
   background-color: var(--magenta);
   border-radius: 5px;
@@ -44,18 +38,10 @@
   font-size: 10px;
   text-transform: uppercase;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
 }
 
-.informes:hover {
+.informes-activate:hover {
   background-color: var(--gris-claro);
-}
-
-#sec-contenido {
-  text-align: center;
-
-  
 }
 
 .paso {
@@ -83,7 +69,20 @@
 #sec-titulo {
   margin: 15px;
   width: 350px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   
+}
+
+.contenedor-imagen {
+  width: 50%;
+
+}
+  
+
+.sec-titulo_texto-imagen {
+  width: 60%;
 }
 
 #sec-contenido {
@@ -91,6 +90,12 @@
 
   
 }
+
+#sec-contenido p {
+  font-size: 14px;
+
+}
+
 
 .contenido-boton {
   border-radius: 10px;
@@ -112,12 +117,16 @@
 
 .botones-container {
   display: inline-flex; 
+  
 }
 
 /*Generamos estilos para los botones*/
-.paso,
-.generales {
-  margin-right: 10px; 
+.paso a,
+.generales a {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
 }
 
 
@@ -125,4 +134,10 @@
   vertical-align: middle; 
 }
 
+main {
+
+  height: 100vh;
+
+
+}
 
