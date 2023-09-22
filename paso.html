@@ -6,13 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sistema de Publicación de Resultados Electorales</title>
   <link rel="shortcut icon" type="image/png" href="img/icons/favicon-16x16.png" />
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/f
-  ont-awesome.min.css">
+
   <!-- Estilos CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/common.css" />
-  <link rel="stylesheet" href="css/pages/paso.css"/>
-  <link rel="stylesheet" href="css/variables.css"/>
+  <link rel="stylesheet" href="css/pages/paso.css" />
+  <link rel="stylesheet" href="css/variables.css" />
 </head>
 
 <body>
@@ -39,9 +38,9 @@
           <select id="filtro-distrito">
             <option for="filtro-distrito">Distrito</option>
           </select>
-          <select class="filtrar" id="filtrar">
-            <option for="filtrar">Filtrar</option>
-          </select>
+          <button class="filtrar" id="filtrar" type="submit"><i class="fa fa-search icon_boton_filtrar"
+              aria-hidden="true"></i>Filtrar</option>
+          </button>
           <a class="boton-generales" href="generales.html">Generales</a>
           <a class="informes-activate" href="informes.html">Informes</a>
           <a class="boton-inicio" href="generales.html">Inicio</a>
@@ -51,11 +50,13 @@
   </header>
   <!-- Contenido principal de la página -->
   <main>
-    <h3 class="exito">Se agrego con exito el resultado al informe.</h3>
+    <h3 class="exito"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>Se agrego con exito el resultado al informe.
+    </h3>
     <br>
-    <h3 class="error"> Se produjo un error al intentar agregar resultados al informe.</h3>
+    <h3 class="error"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Se produjo un error al intentar
+      agregar resultados al informe.</h3>
     <br>
-    <h3 class="completar">La operacion no se pudo completar.</h3>
+    <h3 class="completar"><i class="fa fa-exclamation" aria-hidden="true"></i>La operacion no se pudo completar.</h3>
     <section id="sec-titulo">
       <!--Seccion para agregar una palicula favorita por codigo-->
       <h1>Elecciones 2021 | Paso</h1>
