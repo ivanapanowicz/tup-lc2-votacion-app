@@ -21,7 +21,7 @@
       </a>
     </div>
     <!--Barra de menú principal-->
-    <nav class="menu">
+    <nav class="barra-elecciones">
       <div>
         <form>
           <!-- Filtro de año -->
@@ -29,16 +29,16 @@
             <option for="filtro-año">Año</option>
           </select>
           <!-- Filtro de cargo -->
-          <select id="filtro'cargo">
+          <select id="filtro-cargo">
             <option for="filtro-cargo">Cargo</option>
           </select>
           <!-- Filtro de distrito -->
           <select id="filtro-distrito">
             <option for="filtro-distrito">Distrito</option>
           </select>
-          <li><a class="boton-generales" href="generales.html">Generales</a></li>
-          <li><a class="informes-activate" href="informes.html">Informes</a></li>
-          <li><a class="boton-generales" href="generales.html">Inicio</a></li>
+          <a class="boton-generales" href="generales.html">Generales</a>
+          <a class="informes-activate" href="informes.html">Informes</a>
+          <a class="boton-inicio" href="generales.html">Inicio</a>
         </form>
       </div>
     </nav>
@@ -49,9 +49,16 @@
   <main>
     <section id="sec-titulo">
       <!--Seccion para agregar una palicula favorita por codigo-->
-      <h2>Generales</h2>
-      <p>Párrafo o subtítulo</p>
-      <div>Imagen</div>
+      <h1>Elecciones 2021 | Paso</h1>
+      <p class="texto-path">2020 > Generales > Provisorio > Senadores Nacionales > Buenos
+        Aires</p>
+      <button class="boton-agregar-informe" href="generales.html">+ AGREGAR A INFORME</button>
+      <div class="recuadros-informacion">
+        <p class="mesas-escrutadas">Mesas Escrutadas 62.71%</p>
+        <p class="electores">Electores 62.71%</p>
+        <p class="escrutado">Participación sobre escrutado 62.71%</p>
+      </div>
+
     </section>
     <section id="sec-contenido">
       <!--Seccion para contenido de la página-->

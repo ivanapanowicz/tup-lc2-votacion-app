@@ -1,1 +1,107 @@
 
+.boton-inicio {
+  background-color: var(--gris-claro);
+  border-radius: 5px;
+  padding: 5px;
+  font: 10px Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.boton-inicio:hover {
+  background-color: var(--gris-claro);
+}
+
+select {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px;
+  color: var(--celeste);
+  font-weight: bold;
+}
+
+p.texto-path {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: var(--celeste);
+}
+
+.boton-agregar-informe {
+  background-color: var(--gris-claro);
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.boton-agregar-informe:hover {
+  color: var(--textos);
+}
+
+.recuadros-informacion {
+  border-radius: 10px;
+  margin: 15px;
+  height: 70px;
+  width: 184px;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mesas-escrutadas {
+  background-color: var(--celeste);
+  border-radius: 10px;
+  margin: 15px;
+  height: 70px;
+  width: 184px;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.electores {
+  background-color: var(--magenta);
+  border-radius: 10px;
+  margin: 15px;
+  height: 70px;
+  width: 184px;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.escrutado {
+  background-color: var(--morado);
+  border-radius: 10px;
+  margin: 15px;
+  height: 70px;
+  width: 184px;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
