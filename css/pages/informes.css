@@ -37,6 +37,51 @@
   text-align: center;
 }
 
+table {
+  border: solid 1px black;
+}
+
+.recuadros-informativos {
+  display: flex;
+  justify-content: center;
+}
+
+.informacion_titulo {
+  font-weight: bold;
+}
+
+.recuadro {
+
+  border-radius: 5px;
+  margin: 2px;
+  height: 70px;
+  width: 120px;
+  padding: 0.5rem 1rem;
+  color: #FFF;
+  font-size: 12px;
+  display: flex;
+}
+
+.recuadro_1 {
+  background-color: var(--celeste);
+}
+
+.recuadro_2 {
+  background-color: var(--magenta);
+}
+
+.recuadro_3 {
+  background-color: var(--morado);
+}
+
+.informacion p {
+  color: #FFF;
+}
+
+.icono img {
+  height: 50px;
+  width: 50px;
+}
 
 /* Estilos para la grilla */
 table {
@@ -48,30 +93,75 @@ table {
   background-color: rgb(250, 250, 250);
 }
 
-/* Estilos para la cabecera */
-thead {
-  text-align: center;
-  color: --titulo-Grilla;
-}
 
-thead th {
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-bottom: 1px solid --borde-inferior-Grilla;
+table thead  {
+  text-align: center;
+    color: var(--titulo-Grilla);
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--borde-inferior-Grilla);
 }
 
 /* Estilos para el cuerpo */
 tbody tr:hover {
-  background-color: rgb(250, 250, 250);
+  background-color: lightgray;
+    cursor: pointer;
+    z-index: 10
 }
 
-tbody td {
-  background-color: rgb(255, 255, 255);
-  border-bottom: 1px solid --borde-inferior-Grilla;
-  padding: 15px 0px;
+table tbody td {
+  border-bottom: 1px solid var(--borde-inferior-Grilla);
+  padding: 15px 0;
   font-size: 12px;
-  text-align: center;
+
   vertical-align: top;
+}
+
+table svg {
+  height: 200px;
+}
+
+.columna_elecciones {
+  padding: 25px;
+  text-align: start;
+}
+
+.texto-elecciones-chico {
+  font-size: 12px;
+  color: var(--textos);
+  font-weight: bold;
+}
+
+.texto-path-chico {
+  font-size: 11px;
+  color: var(--celeste);
+}
+
+.contenedor_agrupacion {
+  width: 100%;
+  height: 325px;
+  overflow-y: scroll;
+  padding: 5px;
+  color: var(--textos);
+}
+
+
+.datos_agrupacion {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+
+}
+
+.agrupacion_nombre {
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.datos_agrupacion p {
+  font-size: 12px;
+  margin: 5px;
 }
