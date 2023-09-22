@@ -89,7 +89,6 @@ p.texto-path {
   border-radius: 10px;
   margin: 15px;
   height: 70px;
-  width: 184px;
   padding: 0.5rem 1rem;
   color: #fff;
   font-size: 12px;
@@ -109,8 +108,10 @@ p.texto-path {
   color: #fff;
   font-size: 12px;
   text-align: center;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .electores {
@@ -123,9 +124,11 @@ p.texto-path {
   color: #fff;
   font-size: 12px;
   text-align: center;
-
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+
 }
 
 .escrutado {
