@@ -1,16 +1,38 @@
 
+/*Boton inicio con hover */
+
 .boton-inicio {
   background-color: var(--gris-claro);
-  border-radius: 5px;
-  padding: 5px;
-  font: 10px Arial, sans-serif;
-  text-transform: uppercase;
+  color: white;
+  font-size: 10px;
   text-align: center;
-  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color 0.3s;
   text-decoration: none;
 }
 
 .boton-inicio:hover {
+  color: var(--textos);
+}
+
+/*Boton Paso con hover */
+
+.boton-paso {
+  background-color: var(--magenta);
+  border-radius: 5px;
+  padding: 5px;
+  color: #fff;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.boton-paso:hover {
   background-color: var(--gris-claro);
 }
 
@@ -30,7 +52,7 @@ p.texto-path {
   color: var(--celeste);
 }
 
-.boton-agregar-informe {
+.informes-activate{
   background-color: var(--gris-claro);
   color: white;
   font-size: 10px;
@@ -43,7 +65,7 @@ p.texto-path {
   text-decoration: none;
 }
 
-.boton-agregar-informe:hover {
+.informes-activate:hover {
   color: var(--textos);
 }
 

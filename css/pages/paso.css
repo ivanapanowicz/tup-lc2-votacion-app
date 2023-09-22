@@ -9,19 +9,60 @@
 
 }
 
+/*Boton inicio con hover */
+
 .boton-inicio {
   background-color: var(--gris-claro);
-  border-radius: 5px;
-  padding: 5px;
-  font: 10px Arial, sans-serif;
-  text-transform: uppercase;
+  color: white;
+  font-size: 10px;
   text-align: center;
-  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color 0.3s;
   text-decoration: none;
 }
 
 .boton-inicio:hover {
+  color: var(--textos);
+}
+
+/*Boton Generales con hover */
+
+.boton-generales {
+  background-color: var(--celeste);
+  border-radius: 5px;
+  padding: 5px;
+  color: #fff;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.boton-generales:hover {
   background-color: var(--gris-claro);
+}
+
+/*Boton Informes con hover */
+
+.informes-activate {
+  background-color: var(--gris-claro);
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.informes-activate:hover {
+  color: var(--textos);
 }
 
 select {
