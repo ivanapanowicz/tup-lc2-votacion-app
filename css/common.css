@@ -6,7 +6,12 @@
 html,
 body {
   padding: 0;
+  margin: 0;
   background-color: rgb(240, 240, 240);
+}
+
+a {
+  text-decoration: none;
 }
 
 p {
@@ -30,116 +35,57 @@ h3 {
   color: var(--titulos);
 }
 
+/* LOGO */
 .header-page {
   padding: 0.5em;
   background-color: var(--fondo-Cabecera);
-  color: white;
-  width: 100%;
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: auto;
-  margin-left: auto;
 }
 
 .header-page .logo {
-  width: 150px;
+  width: 130px;
   margin-left: 5%;
 }
 
+/* MENU */
 .barra-elecciones {
-  margin-left: 13px;
-  margin-right: 13px;
   background-color: var(--fondo-Menu);
-  width: 100%;
+  color: white;
+  padding: 20px 0 20px 0;
 }
+
+.barra-elecciones ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin: 0;
+}
+
+.barra-elecciones ul li {
+  margin-right: 15px;
+  text-transform: uppercase;
+}
+
+/* PIE DE PAGINA */
 
 footer {
   background-color: var(--fondo-Footer);
   color: var(--texto-footer);
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+footer p,
+footer a {
+  color: var(--texto-footer);
+  text-decoration: none;
 }
 
 footer img {
-  width: 40px;
-}
-
-/* arreglar */
-
-.boton-paso {
-  background-color: var(--magenta);
-  border-radius: 5px;
-  padding: 5px;
-  color: #fff;
-  font-size: 10px;
-  text-transform: uppercase;
-  text-align: center;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.boton-paso:hover {
-  background-color: var(--gris-claro);
-}
-
-.boton-generales {
-  background-color: var(--celeste);
-  border-radius: 5px;
-  padding: 5px;
-  color: #fff;
-  font-size: 10px;
-  text-transform: uppercase;
-  text-align: center;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.boton-generales:hover {
-  background-color: var(--gris-claro);
-}
-/*  */
-
-.informes-activate {
-  border-radius: 15px;
-  border: solid white 1px;
-  padding: 5px;
-  color: #fff;
-  font-size: 10px;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.informes:hover {
-  background-color: var(--gris-claro);
-}
-
-#sec-titulo {
-  margin: 15px;
-  width: 350px;
-}
-
-#sec-contenido {
-  text-align: center;
-}
-
-.paso-boton {
-  border-radius: 10px;
-  margin: 25px;
-  height: 100px;
-  width: 400px;
-  padding: 1rem;
-  color: #fff;
-  font-size: 28px;
-  text-align: center;
-}
-
-.generales-boton {
-  border-radius: 10px;
-  margin: 25px;
-  height: 100px;
-  width: 400px;
-  padding: 1rem;
-  color: #fff;
-  font-size: 28px;
-  text-align: center;
+  height: 40px;
 }
