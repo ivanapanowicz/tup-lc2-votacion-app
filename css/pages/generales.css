@@ -189,7 +189,147 @@ p.texto-path {
     width: 400px;
  }
 
- .chart-wrap {
+ /*Seccion de contenido*/
+
+ #sec-contenido {
+  max-width: 100%;
+  padding: 50px;
+}
+
+.boton_agregar_informe:hover {
+  color: var(--textos);
+  cursor: pointer;
+}
+
+.recuadros-informativos {
+  display: flex;
+  justify-content: center;
+}
+
+/*recuadros estadisticas*/
+
+
+#recuadros_agrupaciones_politicas {
+  display: flex;
+
+}
+
+.contenedor-seccion-agrupaciones-politicas {
+  border-radius: 25px;
+  padding: 15px;
+  border: 1px var(--borde-Grilla) solid;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  height: 420px;
+  width: 100%;
+
+}
+
+
+.distrito {
+  width: 30%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.recuadro {
+
+  border-radius: 10px;
+  margin: 15px;
+  height: 70px;
+  width: 184px;
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+  display: flex;
+}
+
+
+.contenedor-agrupaciones-politicas {
+  overflow-y: scroll;
+  height: 325px;
+}
+
+.agrupaciones-politicas {
+  font-size: 11px;
+  color: var(--textos);
+  padding: 5px;
+  text-transform: uppercase;
+
+}
+
+.titulo_agrupacion {
+  font-weight: bold;
+  font-size: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--borde-Grilla);
+
+}
+
+
+.grafico_votos {
+  text-align: center;
+}
+
+
+h3 {
+  font-weight: bold;
+  padding: 1.8em 0 0 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.partido_descripcion_contenedor {
+  display: flex;
+}
+
+.partido_titulo {
+  flex-grow: 1;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/*barra de progreso*/
+.progress {
+  height: 35px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: width 0.25s;
+  border-radius: 5px;
+}
+
+.progress-bar-text {
+  margin-left: 10px;
+  font-weight: bold;
+  color: var(--textos);
+  font-size: 9px;
+}
+
+
+
+.contenedor-mapa {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.mapa {
+  height: 100%;
+}
+
+.mapa path {
+  height: 400px;
+  width: 400px;
+}
+
+
+.chart-wrap {
   --chart-width: 260px;
   --grid-color: #aaa;
   --bar-thickness: 25px;
@@ -197,6 +337,7 @@ p.texto-path {
   --bar-spacing: 10px;
   font-family: sans-serif;
   width: var(--chart-width);
+  margin-left: 30px;
 }
 
 .chart-wrap .title {
@@ -209,6 +350,7 @@ p.texto-path {
 /* cuando definimos el gráfico en horizontal, lo giramos 90 grados */
 .chart-wrap.horizontal .grid {
   transform: rotate(-90deg);
+
 }
 
 .chart-wrap.horizontal .bar::after {
@@ -228,7 +370,7 @@ p.texto-path {
   font-size: 10px;
 }
 
-/* posicionamos el % del gráfico*/
+
 .chart-wrap .grid::before {
   font-size: 0.8em;
   font-weight: bold;
