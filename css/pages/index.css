@@ -8,6 +8,7 @@
   text-align: center;
   display: inline-block;
   text-decoration: none;
+  width: 100%;
 }
 
 .boton-paso:hover {
@@ -24,6 +25,7 @@
   text-align: center;
   display: inline-block;
   text-decoration: none;
+  width: 100%;
 }
 
 .boton-generales:hover {
@@ -38,6 +40,7 @@
   font-size: 10px;
   text-transform: uppercase;
   text-align: center;
+  width: 100%;
 }
 
 .informes-activate:hover {
@@ -67,8 +70,6 @@
 }
 
 #sec-titulo {
-  margin: 15px;
-  width: 350px;
   display: flex;
   justify-content: center;
   width: 100%;

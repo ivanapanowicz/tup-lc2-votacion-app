@@ -49,10 +49,12 @@ h3 {
 }
 
 /* MENU */
+/*Correccion de altura del menu*/
 .barra-elecciones {
   background-color: var(--fondo-Menu);
   color: white;
   padding: 20px 0 20px 0;
+  width: 100%;
 }
 
 .barra-elecciones ul {
@@ -78,6 +80,8 @@ footer {
   align-items: center;
   padding: 70px;
   margin: 0;
+  overflow: auto;
+  max-height: 100px;
 }
 
 footer p,
@@ -88,4 +92,5 @@ footer a {
 
 footer img {
   height: 40px;
+  margin-bottom: 0;
 }

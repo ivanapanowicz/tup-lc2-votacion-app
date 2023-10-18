@@ -1,11 +1,14 @@
-.menu .filtrar {
-  background-color: rgb(255, 255, 255);
+.filtrar {
+  background-color: white;
+  border-radius: 15px;
   padding: 5px;
+  font-family: Arial, sans-serif;
   font-size: 10px;
-  font-style: #fff;
   text-transform: uppercase;
   text-align: center;
   color: var(--textos);
+  display: inline-flex;
+  align-items: center;
 
 }
 
@@ -15,13 +18,14 @@
   background-color: var(--gris-claro);
   color: white;
   font-size: 10px;
-  text-align: center;
   padding: 5px;
   border-radius: 5px;
   text-transform: uppercase;
   display: inline-block;
   transition: color 0.3s;
   text-decoration: none;
+  text-align: center;
+  justify-content: flex-end;
 }
 
 .boton-inicio:hover {
