@@ -78,10 +78,9 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 70px;
+  padding: 20px;
   margin: 0;
   overflow: auto;
-  max-height: 100px;
 }
 
 footer p,

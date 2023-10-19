@@ -1,44 +1,94 @@
-.exito{
-  color: #FFffFF;
+/* BARRA MENU */
+.boton-paso {
+  background-color: var(--magenta);
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  width: 100px;
+  height: 15px;
+}
+
+.boton-paso:hover {
+  background-color: var(--gris-claro);
+}
+
+.boton-generales {
+  background-color: var(--celeste);
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  width: 100px;
+  height: 15px;
+}
+
+.boton-generales:hover {
+  background-color: var(--gris-claro);
+}
+
+.boton-inicio {
+  background-color: var(--gris-claro);
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  width: 100px;
+  height: 15px;
+}
+
+.boton-inicio:hover {
+  background-color: var(--textos);
+}
+
+/* RECUADROS DE INFORMACION */
+.exito {
+  color: #ffffff;
   background-color: var(--mensaje-usuario-verde);
   border-style: solid;
   border-radius: 10px;
   margin: 20px auto;
-  border-width: 2px;
+  border-width: 0px;
   padding: 15px;
-  font-style: #FFffFF;
+  font-style: #ffffff;
   font-size: 16px;
   font-weight: 200px;
   text-align: center;
-  width: 400px;
+  width: 500px;
 }
-.error{
-color: #FFffFF;
-   background-color: var(--mensaje-usuario-rojo);
-   border-style: solid;
+
+.error {
+  color: #ffffff;
+  background-color: var(--mensaje-usuario-rojo);
+  border-style: solid;
   border-radius: 10px;
   margin: 20px auto;
-  border-width: 2px;
+  border-width: 0px;
   padding: 15px;
-  font-style: #FFffFF;
+  font-style: #ffffff;
   font-size: 16px;
   font-weight: 200px;
   text-align: center;
-  width: 400px;
+  width: 500px;
 }
-.completar{
-color: #FFffFF;
-   background-color: var(--mensaje-usuario-amarillo);
-   border-style: solid;
+
+.completar {
+  color: #ffffff;
+  background-color: var(--mensaje-usuario-amarillo);
+  border-style: solid;
   border-radius: 10px;
   margin: 20px auto;
-  border-width: 2px;
+  border-width: 0px;
   padding: 15px;
-  font-style: #FFffFF;
   font-size: 16px;
-  font-weight: 200px;
   text-align: center;
-  width: 400px;
+  width: 500px;
 }
 
 table {
@@ -55,13 +105,12 @@ table {
 }
 
 .recuadro {
-
   border-radius: 5px;
   margin: 2px;
   height: 70px;
   width: 120px;
   padding: 0.5rem 1rem;
-  color: #FFF;
+  color: #fff;
   font-size: 12px;
   display: flex;
 }
@@ -79,7 +128,7 @@ table {
 }
 
 .informacion p {
-  color: #FFF;
+  color: #fff;
 }
 
 .icono img {
@@ -97,22 +146,21 @@ table {
   background-color: rgb(250, 250, 250);
 }
 
-
-table thead  {
+table thead {
   text-align: center;
-    color: var(--titulo-Grilla);
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-bottom: 1px solid var(--borde-inferior-Grilla);
+  color: var(--titulo-Grilla);
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--borde-inferior-Grilla);
 }
 
 /* Estilos para el cuerpo */
 tbody tr:hover {
   background-color: lightgray;
-    cursor: pointer;
-    z-index: 10
+  cursor: pointer;
+  z-index: 10;
 }
 
 table tbody td {
@@ -151,13 +199,11 @@ table svg {
   color: var(--textos);
 }
 
-
 .datos_agrupacion {
   padding: 20px;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
-
 }
 
 .agrupacion_nombre {
@@ -168,22 +214,4 @@ table svg {
 .datos_agrupacion p {
   font-size: 12px;
   margin: 5px;
-}
-
-
-/*Boton inicio con hover */
-
-.boton-inicio {
-  background-color: var(--gris-claro);
-  border-radius: 5px;
-  padding: 5px;
-  font: 10px Arial, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
-}
-
-.boton-inicio:hover {
-  background-color: var(--textos);
 }

@@ -1,14 +1,13 @@
 .boton-paso {
   background-color: var(--magenta);
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   color: #fff;
-  font-size: 10px;
-  text-transform: uppercase;
   text-align: center;
   display: inline-block;
-  text-decoration: none;
-  width: 100%;
+  text-transform: uppercase;
+  width: 100px;
+  height: 15px;
 }
 
 .boton-paso:hover {
@@ -18,14 +17,13 @@
 .boton-generales {
   background-color: var(--celeste);
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   color: #fff;
-  font-size: 10px;
-  text-transform: uppercase;
   text-align: center;
   display: inline-block;
-  text-decoration: none;
-  width: 100%;
+  text-transform: uppercase;
+  width: 100px;
+  height: 15px;
 }
 
 .boton-generales:hover {
@@ -33,14 +31,15 @@
 }
 
 .informes-activate {
-  border-radius: 15px;
+  border-radius: 10px;
   border: solid white 1px;
-  padding: 5px;
+  padding: 10px;
   color: #fff;
-  font-size: 10px;
-  text-transform: uppercase;
   text-align: center;
-  width: 100%;
+  display: inline-block;
+  text-transform: uppercase;
+  width: 100px;
+  height: 15px;
 }
 
 .informes-activate:hover {
@@ -73,14 +72,11 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  
 }
 
 .contenedor-imagen {
   width: 50%;
-
 }
-  
 
 .sec-titulo_texto-imagen {
   width: 60%;
@@ -88,15 +84,11 @@
 
 #sec-contenido {
   text-align: center;
-
-  
 }
 
 #sec-contenido p {
   font-size: 14px;
-
 }
-
 
 .contenido-boton {
   border-radius: 10px;
@@ -117,8 +109,7 @@
 /*Correccion de Botones, Paso  y Generales*/
 
 .botones-container {
-  display: inline-flex; 
-  
+  display: inline-flex;
 }
 
 /*Generamos estilos para los botones*/
@@ -130,15 +121,10 @@
   color: white;
 }
 
-
 .boton-imagen {
-  vertical-align: middle; 
+  vertical-align: middle;
 }
 
 main {
-
   height: 100vh;
-
-
 }
-

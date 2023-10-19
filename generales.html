@@ -23,30 +23,30 @@
     </div>
     <!--Barra de menú principal-->
     <nav class="barra-elecciones">
-      <div>
-        <form>
-          <!-- Filtro de año -->
-          <select id="filtro-año">
-            <option for="filtro-año">Año</option>
-          </select>
-          <!-- Filtro de cargo -->
-          <select id="filtro-cargo">
-            <option for="filtro-cargo">Cargo</option>
-          </select>
-          <!-- Filtro de distrito -->
-          <select id="filtro-distrito">
+      <ul>
+        <!-- Filtro de año -->
+        <select id="filtro-año">
+          <option for="filtro-año">Año</option>
+        </select>
+        <!-- Filtro de cargo -->
+        <select id="filtro-cargo">
+          <option for="filtro-cargo">Cargo</option>
+        </select>
+        <!-- Filtro de distrito -->
+        <li><select id="filtro-distrito">
             <option for="filtro-distrito">Distrito</option>
-          </select>
-          <button class="boton-filtrar">
+          </select></li>
+        <li><button class="boton-filtrar">
             <div class="icono-search"></div>
             <i class="fa fa-search icon_boton_filtrar" aria-hidden="true"></i>
             Filtrar
-          </button>
-          <a class="boton-paso" href="paso.html">Paso</a>
-          <a class="informes-activate" href="informes.html">Informes</a>
-          <a class="boton-inicio" href="generales.html">Inicio</a>
-        </form>
-      </div>
+          </button></li>
+        <li><a class="boton-paso" href="paso.html">Paso</a></li>
+        <li><a class="informes-activate" href="informes.html">Informes</a></li>
+        <div style="width: 100%; text-align: right;">
+          <a class="boton-inicio" href="index.html">Inicio</a>
+        </div>
+      </ul>
     </nav>
   </header>
 
@@ -65,7 +65,7 @@
       <h1>Elecciones 2021 | Generales</h1>
       <p class="texto-path">2020 > Generales > Provisorio > Senadores Nacionales > Buenos
         Aires</p>
-      <button class="boton-agregar-informe" href="generales.html">+ AGREGAR A INFORME</button>
+      <button class="boton-agregar-informe" href="informes.html">+ AGREGAR A INFORME</button>
       <div class="recuadros-informacion">
         <div class="mesas-escrutadas">
           <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -256,127 +256,125 @@
 
 
     </section>
-      <section id="sec-contenido">
-        <!--Seccion para contenido de la página-->
-        
-  
-          <div id="recuadros_agrupaciones_politicas">
-            <div class="contenedor-seccion-agrupaciones-politicas agrupaciones_politicas">
-                <h3>Agrupaciones Políticas</h3>
-                <div class="contenedor-agrupaciones-politicas">
-                    <div class="agrupaciones-politicas">
-                        <h4 class="titulo_agrupacion">JUNTOS POR EL CAMBIO</h4>
-                        <div class="partido_contenedor">
-                            <div class="partido_descripcion_contenedor">
-                                <h5 class="partido_titulo">JUNTOS</h5>
-                                <div>
-                                    <p>38%</p>
-                                    <p>300000 votos</p>
-                                </div>
-                            </div>
-                            <div class="progress" style="background: var(--grafica-amarillo-claro);">
-                                <div class="progress-bar"
-                                    style="width:75%; background: var(--grafica-amarillo);">
-                                    <span class="progress-bar-text">75%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="partido_contenedor">
-                            <div class="partido_descripcion_contenedor">
-                                <h5 class="partido_titulo">PJ</h5>
-                                <div>
-                                    <p>20%</p>
-                                    <p>12000 votos</p>
-                                </div>
-                            </div>
-                            <div class="progress" style="background: var(--grafica-amarillo-claro);">
-                                <div class="progress-bar"
-                                    style="width:15%; background: var(--grafica-amarillo);">
-                                    <span class="progress-bar-text">15%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="agrupaciones-politicas">
-                        <h4 class="titulo_agrupacion">ECO + VAMOS CORRIENTES</h4>
-  
-                        <div class="partido_contenedor">
-                            <div class="partido_descripcion_contenedor">
-                                <h5 class="partido_titulo">VERDE</h5>
-                                <div>
-                                    <p>38%</p>
-                                    <p>300000 votos</p>
-                                </div>
-                            </div>
-                            <div class="progress" style="background: var(--grafica-verde-claro);">
-                                <div class="progress-bar" style="width:75%; background: var(--grafica-verde);">
-                                    <span class="progress-bar-text">75%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="partido_contenedor">
-                            <div class="partido_descripcion_contenedor">
-                                <h5 class="partido_titulo">Lorem ipsum</h5>
-                                <div>
-                                    <p>20%</p>
-                                    <p>12000 votos</p>
-                                </div>
-                            </div>
-                            <div class="progress" style="background: var(--grafica-verde-claro);">
-                                <div class="progress-bar" style="width:15%; background: var(--grafica-verde);">
-                                    <span class="progress-bar-text">15%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-  
+    <section id="sec-contenido">
+      <!--Seccion para contenido de la página-->
+
+
+      <div id="recuadros_agrupaciones_politicas">
+        <div class="contenedor-seccion-agrupaciones-politicas agrupaciones_politicas">
+          <h3>Agrupaciones Políticas</h3>
+          <div class="contenedor-agrupaciones-politicas">
+            <div class="agrupaciones-politicas">
+              <h4 class="titulo_agrupacion">JUNTOS POR EL CAMBIO</h4>
+              <div class="partido_contenedor">
+                <div class="partido_descripcion_contenedor">
+                  <h5 class="partido_titulo">JUNTOS</h5>
+                  <div>
+                    <p>38%</p>
+                    <p>300000 votos</p>
+                  </div>
                 </div>
-            </div>
-            <div class="contenedor-seccion-agrupaciones-politicas distrito ">
-                <div class="contenedor-mapa">
-                    <h3 class="nombre_mapa">Buenos Aires</h3>
-                    <svg class="mapa">
-                        <path class="leaflet-interactive mapaa" height="300" width="800" stroke="#18a0fb"
-                            stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            fill="#18a0fb" fill-opacity="1" fill-rule="evenodd"
-                            d="M171 55L163 53L150 45L147 50L143 49L133 60L114 60L114 151L116 151L120 155L122 156L126 153L128 149L124 145L126 143L126 138L128 138L129 133L126 129L126 122L134 126L139 126L169 119L179 114L189 97L190 89L189 87L186 87L182 82L185 75L181 69L171 63L170 64L170 58z">
-                        </path>
-                    </svg>
+                <div class="progress" style="background: var(--grafica-amarillo-claro);">
+                  <div class="progress-bar" style="width:75%; background: var(--grafica-amarillo);">
+                    <span class="progress-bar-text">75%</span>
+                  </div>
                 </div>
-            </div>
-            <div class="contenedor-seccion-agrupaciones-politicas grafico_votos">
-                <h3>Resumen de Votos</h3>
-  
-                <div class="chart-wrap horizontal">
-                    <div class="grid">
-                        <div class="bar" style="--bar-value:85%;--bar-color:var(--grafica-amarillo);"
-                            data-name="Partido 1" title="Your Blog 85%"></div>
-  
-                        <div class="bar" style="--bar-value:23%;--bar-color:var(--grafica-lila);"
-                            data-name="Partido 2" title="Medium 23%"></div>
-  
-                        <div class="bar" style="--bar-value:7%;--bar-color:var(--grafica-bordo);"
-                            data-name="Partido 3" title="Tumblr 7%"></div>
-  
-                        <div class="bar" style="--bar-value:38%;--bar-color:var(--grafica-celeste);"
-                            data-name="Partido 4" title="Facebook 38%"></div>
-  
-                        <div class="bar" style="--bar-value:35%;--bar-color:var(--grafica-lila2);"
-                            data-name="Partido 5" title="Youtube 35%"></div>
-  
-                        <div class="bar" style="--bar-value:30%;--bar-color:var(--grafica-lila);"
-                            data-name="Partido 6" title="LinkedIn 30%"></div>
-  
-                        <div class="bar" style="--bar-value:5%;--bar-color:var(--grafica-bordo);"
-                            data-name="Partido 7" title="Twitter 5%"></div>
-  
-                        <div class="bar" style="--bar-value:20%;--bar-color:var(--grafica-gris);"
-                            data-name="Otros" title="Other 20%"></div>
-                    </div>
+              </div>
+              <div class="partido_contenedor">
+                <div class="partido_descripcion_contenedor">
+                  <h5 class="partido_titulo">PJ</h5>
+                  <div>
+                    <p>20%</p>
+                    <p>12000 votos</p>
+                  </div>
                 </div>
-  
+                <div class="progress" style="background: var(--grafica-amarillo-claro);">
+                  <div class="progress-bar" style="width:15%; background: var(--grafica-amarillo);">
+                    <span class="progress-bar-text">15%</span>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="agrupaciones-politicas">
+              <h4 class="titulo_agrupacion">ECO + VAMOS CORRIENTES</h4>
+
+              <div class="partido_contenedor">
+                <div class="partido_descripcion_contenedor">
+                  <h5 class="partido_titulo">VERDE</h5>
+                  <div>
+                    <p>38%</p>
+                    <p>300000 votos</p>
+                  </div>
+                </div>
+                <div class="progress" style="background: var(--grafica-verde-claro);">
+                  <div class="progress-bar" style="width:75%; background: var(--grafica-verde);">
+                    <span class="progress-bar-text">75%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="partido_contenedor">
+                <div class="partido_descripcion_contenedor">
+                  <h5 class="partido_titulo">Lorem ipsum</h5>
+                  <div>
+                    <p>20%</p>
+                    <p>12000 votos</p>
+                  </div>
+                </div>
+                <div class="progress" style="background: var(--grafica-verde-claro);">
+                  <div class="progress-bar" style="width:15%; background: var(--grafica-verde);">
+                    <span class="progress-bar-text">15%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
+        <div class="contenedor-seccion-agrupaciones-politicas distrito ">
+          <div class="contenedor-mapa">
+            <h3 class="nombre_mapa">Buenos Aires</h3>
+            <svg class="mapa">
+              <path class="leaflet-interactive mapaa" height="300" width="800" stroke="#18a0fb" stroke-opacity="1"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#18a0fb" fill-opacity="1"
+                fill-rule="evenodd"
+                d="M171 55L163 53L150 45L147 50L143 49L133 60L114 60L114 151L116 151L120 155L122 156L126 153L128 149L124 145L126 143L126 138L128 138L129 133L126 129L126 122L134 126L139 126L169 119L179 114L189 97L190 89L189 87L186 87L182 82L185 75L181 69L171 63L170 64L170 58z">
+              </path>
+            </svg>
+          </div>
+        </div>
+        <div class="contenedor-seccion-agrupaciones-politicas grafico_votos">
+          <h3>Resumen de Votos</h3>
+
+          <div class="chart-wrap horizontal">
+            <div class="grid">
+              <div class="bar" style="--bar-value:85%;--bar-color:var(--grafica-amarillo);" data-name="Partido 1"
+                title="Your Blog 85%"></div>
+
+              <div class="bar" style="--bar-value:23%;--bar-color:var(--grafica-lila);" data-name="Partido 2"
+                title="Medium 23%"></div>
+
+              <div class="bar" style="--bar-value:7%;--bar-color:var(--grafica-bordo);" data-name="Partido 3"
+                title="Tumblr 7%"></div>
+
+              <div class="bar" style="--bar-value:38%;--bar-color:var(--grafica-celeste);" data-name="Partido 4"
+                title="Facebook 38%"></div>
+
+              <div class="bar" style="--bar-value:35%;--bar-color:var(--grafica-lila2);" data-name="Partido 5"
+                title="Youtube 35%"></div>
+
+              <div class="bar" style="--bar-value:30%;--bar-color:var(--grafica-lila);" data-name="Partido 6"
+                title="LinkedIn 30%"></div>
+
+              <div class="bar" style="--bar-value:5%;--bar-color:var(--grafica-bordo);" data-name="Partido 7"
+                title="Twitter 5%"></div>
+
+              <div class="bar" style="--bar-value:20%;--bar-color:var(--grafica-gris);" data-name="Otros"
+                title="Other 20%"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
   </main>
   <!--Pie de página-->
