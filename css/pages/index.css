@@ -68,6 +68,7 @@
   font-size: 28px;
 }
 
+/* MAIN */
 #sec-titulo {
   display: flex;
   justify-content: center;
@@ -78,8 +79,12 @@
   width: 50%;
 }
 
-.sec-titulo_texto-imagen {
-  width: 60%;
+.imagen-data {
+  padding: 50px;
+}
+
+.titulo-elecciones {
+  padding-top: 50px;
 }
 
 #sec-contenido {
@@ -101,13 +106,7 @@
   text-align: center;
 }
 
-.contenido-boton img {
-  height: 40px;
-  width: 40px;
-}
-
 /*Correccion de Botones, Paso  y Generales*/
-
 .botones-container {
   display: inline-flex;
 }
