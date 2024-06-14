@@ -17,6 +17,8 @@
   --grafica-amarillo-claro: rgba(252, 210, 0, 0.3);
   --grafica-celeste: rgb(0, 169, 232);
   --grafica-celeste-claro: rgba(0, 169, 232, 0.3);
+  --grafica-azul: rgb(23, 124, 255);
+  --grafica-azul-claro: rgba(23, 124, 255, 0.3);
   --grafica-bordo: rgb(171, 40, 40);
   --grafica-bordo-claro: rgba(171, 40, 40, 0.3);
   --grafica-lila: rgb(112, 76, 159);
@@ -24,7 +26,7 @@
   --grafica-lila2: rgb(77, 46, 110);
   --grafica-lila2-claro: rgba(77, 46, 110, 0.5);
   --grafica-gris: rgb(128, 128, 128);
-  --grafica-gris-claro: rgba(128, 128, 128, 0.5);
+  --grafica-gris-claro: rgb(128, 128, 128, 0.5);
   --grafica-verde: rgb(102, 171, 60);
   --grafica-verde-claro: rgba(102, 171, 60, 0.5);
   --mensaje-usuario-amarillo: #ffc107;

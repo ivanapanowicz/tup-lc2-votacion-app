@@ -1,197 +1,97 @@
-/* BARRA MENU */
-/* SELECCION AÑO-CARGO-DISTRITO */
-select {
-  background: transparent;
+/*----------- Barra de menú ----------- */
+
+.barra-navegacion div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.barra-navegacion div form {
+  padding-left: 50px;
+}
+
+.barra-navegacion div form select {
+  margin-right: 15px;
+  background-color: transparent;
   border: none;
+  outline: none;
   font-size: 14px;
   height: 30px;
-  padding: 5px;
   color: var(--celeste);
   font-weight: bold;
   cursor: pointer;
 }
 
-.boton-generales {
-  background-color: var(--celeste);
-  border-radius: 5px;
-  padding: 10px;
-  color: #fff;
-  text-align: center;
-  display: inline-block;
-  text-transform: uppercase;
-  width: 100px;
-  height: 15px;
+#años {
+  min-width: 50px;
+  max-width: 50px;
 }
 
-.boton-generales:hover {
-  background-color: var(--gris-claro);
+#cargos {
+  min-width: 58px;
+  max-width: 58px;
 }
 
-.boton-filtrar {
+#distritos {
+  min-width: 67px;
+  max-width: 67px;
+}
+
+#secciones {
+  min-width: 71px;
+  max-width: 30px;
+}
+
+.boton_filtrar {
   background-color: white;
-  border-radius: 15px;
-  padding: 10px 20px;
-  font-size: 10px;
+  border-radius: 20px;
+  padding: 4px 23px;
+  color: var(--textos);
   text-transform: uppercase;
   text-align: center;
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
   border: none;
+  cursor: pointer;
 }
 
-.informes-activate {
-  border-radius: 10px;
-  border: solid white 1px;
-  padding: 10px;
-  color: #fff;
-  text-align: center;
-  display: inline-block;
-  text-transform: uppercase;
-  width: 100px;
-  height: 15px;
+.icon_boton_filtrar {
+  padding: 5px;
+  font-size: 13px !important;
 }
 
-.informes-activate:hover {
-  background-color: var(--gris-claro);
+/*----------- Seccion del Titulo -----------*/
+
+#sec-titulo {
+  max-width: 100%;
+  padding: 50px;
 }
 
-.boton-inicio {
-  background-color: var(--gris-claro);
-  border-radius: 5px;
-  padding: 10px;
-  color: #fff;
-  text-align: center;
-  display: inline-block;
-  text-transform: uppercase;
-  width: 100px;
-  height: 15px;
-}
-
-.boton-inicio:hover {
-  background-color: var(--textos);
-}
-
-/* RECUADROS DE INFORMACION */
-
-.exito {
-  color: #ffffff;
-  background-color: var(--mensaje-usuario-verde);
-  border-style: solid;
-  border-radius: 10px;
-  margin: 20px auto;
-  border-width: 0px;
-  padding: 15px;
-  font-style: #ffffff;
-  font-size: 16px;
-  font-weight: 200;
-  text-align: center;
-  width: 500px;
-}
-
-.error {
-  color: #ffffff;
-  background-color: var(--mensaje-usuario-rojo);
-  border-style: solid;
-  border-radius: 10px;
-  margin: 20px auto;
-  border-width: 0px;
-  padding: 15px;
-  font-style: #ffffff;
-  font-size: 16px;
-  font-weight: 200;
-  text-align: center;
-  width: 500px;
-}
-
-.completar {
-  color: #ffffff;
-  background-color: var(--mensaje-usuario-amarillo);
-  border-style: solid;
-  border-radius: 10px;
-  margin: 20px auto;
-  border-width: 0px;
-  padding: 15px;
-  font-style: #ffffff;
-  font-size: 16px;
-  font-weight: 200;
-  text-align: center;
-  width: 500px;
-}
-
-/* INFO MESAS ESCRUTADAS, ELECTORES, PARTICIPACION */
 .texto-path {
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
   color: var(--celeste);
 }
 
-.recuadros-informacion {
-  border-radius: 10px;
-  margin: 15px;
-  height: 70px;
-  padding: 0.5rem 1rem;
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.mesas-escrutadas {
-  background-color: var(--celeste);
-  border-radius: 10px;
-  margin: 15px;
-  height: 70px;
-  width: 184px;
-  padding: 0.5rem 1rem;
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.electores {
-  background-color: var(--magenta);
-  border-radius: 10px;
-  margin: 15px;
-  height: 70px;
-  width: 184px;
-  padding: 0.5rem 1rem;
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.escrutado {
-  color: white;
-  background-color: var(--morado);
-  border-radius: 10px;
-  margin: 15px;
-  height: 70px;
-  width: 184px;
-  padding: 0.5rem 1rem;
-  font-size: 12px;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-/*Seccion de contenido*/
+/*----------- Seccion del Contenido -----------*/
 
 #sec-contenido {
   max-width: 100%;
   padding: 50px;
+}
+
+.sec-contenido_contenedor-nuevoinforme {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.boton_agregar_informe {
+  background-color: var(--gris-claro);
+  color: white;
+  padding: 15px 45px;
+  text-align: center;
+  height: 100%;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: none;
 }
 
 .boton_agregar_informe:hover {
@@ -204,13 +104,17 @@ select {
   justify-content: center;
 }
 
-/*recuadros estadisticas*/
+/* RECUADROS */
 
-#recuadros_agrupaciones_politicas {
+.informacion_titulo {
+  font-weight: bold;
+}
+
+#recuadros_estadisticas {
   display: flex;
 }
 
-.contenedor-seccion-agrupaciones-politicas {
+.contenedor-seccion-estadisticas {
   border-radius: 25px;
   padding: 15px;
   border: 1px var(--borde-Grilla) solid;
@@ -235,12 +139,33 @@ select {
   display: flex;
 }
 
-.contenedor-agrupaciones-politicas {
-  overflow-y: scroll;
+.recuadro_1 {
+  background-color: var(--celeste);
+}
+
+.recuadro_2 {
+  background-color: var(--magenta);
+}
+
+.recuadro_3 {
+  background-color: var(--morado);
+}
+
+.informacion p {
+  color: #fff;
+}
+
+.icono img {
+  height: 50px;
+  width: 50px;
+}
+
+.contenedor-agrupaciones {
+  overflow-y: auto;
   height: 325px;
 }
 
-.agrupaciones-politicas {
+.agrupacion {
   font-size: 11px;
   color: var(--textos);
   padding: 5px;
@@ -260,7 +185,7 @@ select {
 
 h3 {
   font-weight: bold;
-  padding: 1.8em 0 0 0;
+  padding: 0 0 0 0;
   text-align: center;
   white-space: nowrap;
 }
@@ -305,7 +230,7 @@ h3 {
 }
 
 .mapa {
-  height: 100%;
+  height: 500px;
 }
 
 .mapa path {
@@ -344,7 +269,8 @@ h3 {
 }
 
 .chart-wrap .grid {
-  margin-left: 50px;
+  margin-left: 25px;
+  margin-top: 50px;
   position: relative;
   padding: 5px 0 5px 0;
   height: 100%;

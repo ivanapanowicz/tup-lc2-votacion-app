@@ -1,23 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+@import "variables.css";
 
 * {
   font-family: "Roboto", sans-serif;
 }
+
 html,
 body {
-  padding: 0;
   margin: 0;
-  background-color: rgb(240, 240, 240);
-}
-
-a {
-  text-decoration: none;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 p {
   font-size: 12px;
   color: var(--textos);
-  text-align: left;
 }
 
 h1 {
@@ -29,7 +26,6 @@ h1 {
 h2 {
   font-size: 22px;
   color: var(--titulos);
-  text-align: left;
 }
 
 h3 {
@@ -37,59 +33,190 @@ h3 {
   color: var(--titulos);
 }
 
-/* LOGO */
+/*----------- Barra de logo ----------- */
+
 .header-page {
-  padding: 0.5em;
+  padding: 0.5em 50px;
   background-color: var(--fondo-Cabecera);
 }
 
-.header-page .logo {
-  width: 130px;
-  margin-left: 5%;
+.header-page a img {
+  width: 150px;
 }
 
-/* MENU */
-/*Correccion de altura del menu*/
-.barra-elecciones {
+/*----------- Barra de menú ----------- */
+
+.barra-navegacion {
+  padding: 2px 0 2px 0;
   background-color: var(--fondo-Menu);
   color: white;
-  padding: 20px 0 20px 0;
-  width: 100%;
 }
 
-.barra-elecciones ul {
+.barra-navegacion ul {
   list-style: none;
   display: flex;
   align-items: center;
+  padding: 0 50px 0 50px;
   font-size: 13px;
-  margin: 0;
 }
 
-.barra-elecciones ul li {
+.barra-navegacion ul li {
   margin-right: 15px;
-  text-transform: uppercase;
 }
 
-/* PIE DE PAGINA */
+/*----------- Pie de página ----------- */
 
 footer {
   background-color: var(--fondo-Footer);
   color: var(--texto-footer);
+  height: 120px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
-  margin: 0;
-  overflow: auto;
+  padding: 1.5rem;
 }
 
 footer p,
 footer a {
   color: var(--texto-footer);
   text-decoration: none;
+  line-height: 2.5;
+  width: 50%;
 }
 
 footer img {
   height: 40px;
-  margin-bottom: 0;
+}
+
+/*----------- Botones ----------- */
+
+.boton {
+  border-radius: 5px;
+  padding: 8px 15px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 100px;
+}
+
+.boton:hover {
+  background-color: var(--gris-claro);
+}
+
+.boton_informes {
+  border-radius: 15px;
+  padding: 8px 15px;
+  color: #fff;
+  border: solid white 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: 100px;
+}
+
+.boton_informes:hover {
+  background-color: var(--gris-claro);
+}
+
+.boton_inicio {
+  border-radius: 5px;
+  padding: 8px 15px;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: 100px;
+
+  background-color: var(--gris-claro);
+}
+
+.boton_inicio:hover {
+  color: var(--textos);
+}
+
+.paso {
+  background-color: var(--magenta);
+}
+
+.generales {
+  background-color: var(--celeste);
+}
+
+/*----------- Mensajes ----------- */
+
+.mensaje {
+  width: 400px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 200px;
+  text-align: center;
+}
+
+.fa {
+  font-size: 20px;
+}
+
+.mensaje-1 {
+  background-color: var(--mensaje-usuario-verde);
+  display: none;
+}
+
+.mensaje-2 {
+  background-color: var(--mensaje-usuario-rojo);
+  display: none;
+}
+
+.mensaje-3 {
+  background-color: var(--mensaje-usuario-amarillo);
+  display: none;
+}
+
+#lista-mensajes {
+  list-style: none;
+  font-weight: bold;
+  font-size: 12px;
+  position: relative;
+  left: 50px;
+}
+
+.loader-contenedor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.534);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 500;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 100px;
+  padding: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--fondo-Cabecera);
+  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  animation: l3 1s infinite linear;
+}
+
+@keyframes l3 {
+  to {
+    transform: rotate(1turn);
+  }
 }
