@@ -22,7 +22,7 @@ function cargarInformes() {
     informes.forEach(async (informe) => {
 
         let { anioEleccion, categoriaId, categoria, circuitoId, distritoId, distrito, mesaId, seccionId, seccion, seccionProvincialId, tipoEleccion, tipoRecuento } = informe
-        let URL = `https://resultados.mininterior.gob.ar/api/resultados/getResultados?anioEleccion=${anioEleccion}&tipoRecuento=${tipoRecuento}&tipoEleccion=${tipoEleccion}&categoriaId=${categoriaId}&distritoId=${distritoId}&seccionProvincialId=${seccionProvincialId}&seccionId=${seccionId}&circuitoId=${circuitoId}&mesaId=${mesaId}`
+        let URL = `https://elecciones-lc2.bruselario.com/api/resultados/getResultados?anioEleccion=${anioEleccion}&tipoRecuento=${tipoRecuento}&tipoEleccion=${tipoEleccion}&categoriaId=${categoriaId}&distritoId=${distritoId}&seccionProvincialId=${seccionProvincialId}&seccionId=${seccionId}&circuitoId=${circuitoId}&mesaId=${mesaId}`
         try {
 
             let response = await fetch(URL)

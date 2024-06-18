@@ -96,7 +96,7 @@ async function cargarAnios() {
   loader.style.display = 'flex'
   try {
     // Se llama a la api y si esta disponible luego se espera al json con los datos
-    const response = await fetch("https://resultados.mininterior.gob.ar/api/menu/periodos")
+    const response = await fetch("https://elecciones-lc2.bruselario.com/api/menu/periodos")
     if (response.ok) {
       const data = await response.json()
       // Se recorren los datos para crear un option y agregarlo al select
@@ -128,7 +128,7 @@ async function cargarCargos() {
   loader.style.display = 'flex'
   try {
     // Se llama a la api y si esta disponible luego se espera al json con los datos
-    const response = await fetch("https://resultados.mininterior.gob.ar/api/menu?año=" + periodosSelect.value)
+    const response = await fetch("https://elecciones-lc2.bruselario.com/api/menu?año=" + periodosSelect.value)
     if (response.ok) {
       const data = await response.json()
       // Se guardan los datos de los cargos en la variable global cargos para usarlo luego
@@ -253,7 +253,7 @@ async function filtrar() {
   loader.style.display = 'flex'
   // Se valida que haya ingresado los datos para filtar
   if (validarFiltro()) {
-    const URL = `https://resultados.mininterior.gob.ar/api/resultados/getResultados?anioEleccion=${periodosSelect.value}&tipoRecuento=${tipoRecuento}&tipoEleccion=${tipoEleccion}&categoriaId=${cargoSelect.value}&distritoId=${distritoSelect.value}&seccionProvincialId=${hdSeccionProvincial.value == "null" ? "" : hdSeccionProvincial.value}&seccionId=${seccionesSelect.value}&circuitoId=&mesaId=`
+    const URL = `https://elecciones-lc2.bruselario.com/api/resultados/getResultados?anioEleccion=${periodosSelect.value}&tipoRecuento=${tipoRecuento}&tipoEleccion=${tipoEleccion}&categoriaId=${cargoSelect.value}&distritoId=${distritoSelect.value}&seccionProvincialId=${hdSeccionProvincial.value == "null" ? "" : hdSeccionProvincial.value}&seccionId=${seccionesSelect.value}&circuitoId=&mesaId=`
     try {
       const response = await fetch(URL)
       if (response.ok) {
